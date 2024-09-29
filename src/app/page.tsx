@@ -3,6 +3,8 @@ import MaxWidthContainer from "./components/MaxWidthContainer";
 import { socials } from "./utils";
 import React from "react";
 
+export const runtime = "edge";
+
 export default function Home() {
   return (
     <MaxWidthContainer>

@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: "Software Engineer",
 };
 
+export const runtime = "edge";
+
 const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 export default function RootLayout({
