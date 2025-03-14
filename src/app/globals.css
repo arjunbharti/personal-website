@@ -7,17 +7,12 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Roboto Slab, sans-serif;
+  position: relative;
+  overflow-x: hidden;
 }
 
 @layer utilities {
@@ -37,4 +32,24 @@ body {
 
 .animate.show {
   @apply opacity-100 translate-y-0;
+}
+
+/* Glow animations */
+@keyframes float-slow {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-10px, 10px); }
+  50% { transform: translate(0, 20px); }
+  75% { transform: translate(10px, 10px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes pulse-glow {
+  0% { opacity: 0.15; }
+  50% { opacity: 0.25; }
+  100% { opacity: 0.15; }
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

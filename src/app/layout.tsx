@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Roboto_Slab } from 'next/font/google'
+import BackgroundGrid from "./components/BackgroundGrid";
 
 export const metadata: Metadata = {
   title: "Arjun Bharti",
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={robotoSlab.className}>
+        <BackgroundGrid />
         <Header />
         <main className="flex-1 py-28">
           {children}
