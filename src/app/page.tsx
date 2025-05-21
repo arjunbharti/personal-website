@@ -265,7 +265,7 @@ export default function Home() {
           </h5>
           <article>
             <p className="text-gray-600">
-              If you want me to ship your MVP or refactor your codebase, please schedule a call with me here.
+            {`I’ll dive into your vibe-coded project, iron out every glitch, and get it launch-ready. No coding on your part, just seamless results.`}
             </p>
           </article>
           <Cal />
